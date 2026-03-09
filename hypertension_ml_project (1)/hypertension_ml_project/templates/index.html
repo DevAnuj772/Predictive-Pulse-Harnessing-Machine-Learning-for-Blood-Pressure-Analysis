@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hypertension Prediction System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Hypertension Risk Assessment</h1>
+
+<form action="/predict" method="post">
+
+<h2>Demographic Information</h2>
+
+<label>Gender</label>
+<select name="gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+
+<label>Age Group</label>
+<select name="age_group">
+<option value="18-34">18 - 34</option>
+<option value="35-50">35 - 50</option>
+<option value="51-64">51 - 64</option>
+<option value="65+">65+</option>
+</select>
+
+
+<h2>Medical History</h2>
+
+<label>Family History of Hypertension</label>
+<select name="family_history">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+<label>Current Patient Status</label>
+<select name="patient_status">
+<option value="New">New Patient</option>
+<option value="Existing">Existing Patient</option>
+</select>
+
+<label>Taking Hypertension Medication</label>
+<select name="medication">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+<label>Time Since Diagnosis</label>
+<select name="time_since_diagnosis">
+<option value="<1yr">Less than 1 year</option>
+<option value="1-5yr">1 - 5 years</option>
+<option value="5+yr">More than 5 years</option>
+</select>
+
+
+<h2>Clinical Symptoms</h2>
+
+<label>Symptom Severity</label>
+<select name="symptom_severity">
+<option value="Mild">Mild</option>
+<option value="Moderate">Moderate</option>
+<option value="Severe">Severe</option>
+</select>
+
+<label>Shortness of Breath</label>
+<select name="shortness_breath">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+<label>Visual Changes</label>
+<select name="visual_changes">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+<label>Nosebleeds</label>
+<select name="nosebleeds">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+
+<h2>Vital Signs</h2>
+
+<label>Systolic Blood Pressure</label>
+<select name="systolic_range">
+<option value="<120">Below 120</option>
+<option value="120-139">120 - 139</option>
+<option value="140-159">140 - 159</option>
+<option value="160-179">160 - 179</option>
+<option value="180+">180+</option>
+</select>
+
+<label>Diastolic Blood Pressure</label>
+<select name="diastolic_range">
+<option value="<80">Below 80</option>
+<option value="80-89">80 - 89</option>
+<option value="90-99">90 - 99</option>
+<option value="100-119">100 - 119</option>
+<option value="120+">120+</option>
+</select>
+
+
+<h2>Lifestyle</h2>
+
+<label>Following Controlled Diet</label>
+<select name="diet_control">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+
+<button type="submit">Predict Hypertension Stage</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
