@@ -2,6 +2,7 @@
 Predictive Pulse is an end-to-end Machine Learning application designed to analyze patient demographic and clinical data to predict hypertension stages. This project was developed as part of the Skill Wallet group project to demonstrate full-stack AI/ML integration using Python and Flask.
 
 👥 Developer Team
+
 Anuj Tiwari
 
 Anuj Patel
